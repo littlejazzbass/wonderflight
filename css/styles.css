@@ -1,31 +1,31 @@
 @charset "UTF-8";
 body {
   text-align: center;
-  /*-------------------------------------------------------
-  *
-  *
-  * ヘッダー
-  *
-  *
-  *-------------------------------------------------------*/
-  /*-------------------------------------------------------
-  *
-  *
-  * メイン
-  *
-  *
-  *-------------------------------------------------------*/
-  /*-------------------------------------------------------
-  *
-  *
-  * フッター
-  *
-  *
-  *-------------------------------------------------------*/
+    /*-------------------------------------------------------
+*
+*
+* ヘッダー
+*
+*
+*-------------------------------------------------------*/
+    /*-------------------------------------------------------
+*
+*
+* メイン
+*
+*
+*-------------------------------------------------------*/
+    /*-------------------------------------------------------
+*
+*
+* フッター
+*
+*
+*-------------------------------------------------------*/
 }
 body header {
   position: relative;
-  height: 100vh;
+  height: 110vh;
 }
 body header #container {
   height: 100%;
@@ -78,30 +78,88 @@ body header #container #main_content h1 {
   font-style: normal;
   color: #fff;
   font-size: 35px;
-  padding: 20px;
+  padding: 0 20px;
 }
 body header #container #main_content .sub_head {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
   text-align: center;
+  font-family: 'kan412typos-std',sans-serif;
 }
 body main {
   width: 100%;
-  height: 300px;
+  height: auto;
+  background-color: #f0d4e1;
+  padding: 30px;
 }
-body main h1 {
+body main .description {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #f0d4e1;
+}
+body main .description h1 {
   font-family: 'kan412typos-std',sans-serif;
   text-align: center;
   font-size: 32px;
+  color: #4d484a;
 }
-body main p {
+body main .description h1 span {
+  font-size: 28px;
+}
+body main .description p {
   text-align: center;
   font-family: 'kan412typos-std',sans-serif;
+  color: #4d484a;
+}
+body main .desc_box {
+  position: relative;
+  background: #f7f4e5;
+  box-shadow: 0 0 0 5px #f7f4e5;
+  border: dashed 2px white;
+  padding: 0.2em 0.5em;
+  color: #454545;
+  width: 50%;
+  margin: 0 auto;
+}
+body main .desc_box:after {
+  position: absolute;
+  content: '';
+  right: -7px;
+  top: -7px;
+  border-width: 0 15px 15px 0;
+  border-style: solid;
+  border-color: #f7f4e5 #f0d4e1 #f7f4e5;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+body main .desc_box h1 {
+  font-family: 'kan412typos-std',sans-serif;
+  text-align: center;
+  font-size: 32px;
+  color: #4d484a;
+  position: relative;
+  padding: 0.25em 0;
+}
+body main .desc_box h1:after {
+  content: "";
+  width: 80%;
+  display: block;
+  height: 4px;
+  margin: 0 auto;
+  background: -webkit-linear-gradient(to right, #efb2cf, transparent);
+  background: linear-gradient(to right, #efb2cf, transparent);
+}
+body main .desc_box h1 span {
+  font-size: 28px;
+}
+body main .desc_box p {
+  text-align: center;
+  font-family: 'kan412typos-std',sans-serif;
+  color: #4d484a;
 }
 body footer {
   width: 100%;
   height: 60px;
-  background-color: #3b4b60;
+  background-color: #c2a2b6;
 }
 body footer p {
   text-align: center;
