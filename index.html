@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="js/font.js">
-
-    </script>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/font.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/slick_config.js"></script>
     <title>WonderFlight</title>
 </head>
 <body>
     <header>
         <div id="container">
-            <video id="background_video" loop="" muted="" autoplay=""><source src="resource/movie/wonderflight3.mp4" type="video/mp4"></video>
+            <video id="background_video" loop="" muted="" autoplay="" src="resource/movie/wonderflight3.mp4"></video>
             <div id="video_cover" style="display: none;"></div>
             <div id="overlay"></div>
 
@@ -26,6 +29,9 @@
             </section>
         </div>
     </header>
+    <div class="border">
+
+    </div>
 
     <main>
         <div class="desc_box">
@@ -35,13 +41,23 @@
                 コンサートやファッションショー、ブライダルなど、幅広い場面で最高の演出を実現します。
             </p>
         </div>
+        <div class="scene_box">
+            <h1>例えばこんなシーンで</h1>
+            <div class="slick-box">
+                <div><img src="http://placehold.jp/24/ccd7ea/993333/640x320.png"></div>
+                <div><img src="http://placehold.jp/24/99a8ce/993333/640x320.png"></div>
+                <div><img src="http://placehold.jp/24/4d484a/993333/640x320.png"></div>
+                <div><img src="http://placehold.jp/24/adcab0/993333/640x320.png"></div>
+                <div><img src="http://placehold.jp/24/c2a2b6/993333/640x320.png"></div>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy;株式会社ティーケイエス</p>
     </footer>
 
-
     <script src="js/bideo.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 </html>
