@@ -1,13 +1,13 @@
 @charset "UTF-8";
 body {
   text-align: center;
-    /*-------------------------------------------------------
-*
-*
-* ヘッダー
-*
-*
-*-------------------------------------------------------*/
+  /*-------------------------------------------------------
+  *
+  *
+  * ヘッダー
+  *
+  *
+  *-------------------------------------------------------*/
   /*-------------------------------------------------------
   *
   *
@@ -22,13 +22,13 @@ body {
   *
   *
   *-------------------------------------------------------*/
-    /*-------------------------------------------------------
-*
-*
-* フッター
-*
-*
-*-------------------------------------------------------*/
+  /*-------------------------------------------------------
+  *
+  *
+  * フッター
+  *
+  *
+  *-------------------------------------------------------*/
 }
 body header {
   position: relative;
@@ -87,6 +87,11 @@ body header #container #main_content h1 {
   font-size: 35px;
   padding: 0 20px;
 }
+@media screen and (max-width: 960px) {
+  body header #container #main_content h1 {
+    font-size: 28px !important;
+  }
+}
 body header #container #main_content .sub_head {
   color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
@@ -95,7 +100,7 @@ body header #container #main_content .sub_head {
 }
 body .border {
   width: 100%;
-  height: 20px;
+  height: 10px;
   background-color: #ccd7ea;
   background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, #F9F9F9), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, #F9F9F9), color-stop(0.75, #F9F9F9), color-stop(0.75, transparent), to(transparent));
   -webkit-background-size: 14px 14px;
@@ -106,25 +111,6 @@ body main {
   background-color: #f0d4e1;
   padding: 30px;
 }
-body main .description {
-  width: 60%;
-  margin: 0 auto;
-  background-color: #f0d4e1;
-}
-body main .description h1 {
-  font-family: 'kan412typos-std',sans-serif;
-  text-align: center;
-  font-size: 32px;
-  color: #4d484a;
-}
-body main .description h1 span {
-  font-size: 28px;
-}
-body main .description p {
-  text-align: center;
-  font-family: 'kan412typos-std',sans-serif;
-  color: #4d484a;
-}
 body main .desc_box {
   position: relative;
   background: #f7f4e5;
@@ -133,9 +119,15 @@ body main .desc_box {
   padding: 0.2em 0.5em;
   color: #454545;
   width: 60%;
-  min-width: 280px;
+  min-width: 705px;
   margin: 0 auto;
   margin-top: 40px;
+}
+@media screen and (max-width: 960px) {
+  body main .desc_box {
+    width: 80%;
+    min-width: 320px;
+  }
 }
 body main .desc_box:after {
   position: absolute;
@@ -155,6 +147,11 @@ body main .desc_box h1 {
   position: relative;
   padding: 0.25em 0;
 }
+@media screen and (max-width: 960px) {
+  body main .desc_box h1 {
+    font-size: 24px !important;
+  }
+}
 body main .desc_box h1:after {
   content: "";
   width: 80%;
@@ -167,10 +164,23 @@ body main .desc_box h1:after {
 body main .desc_box h1 span {
   font-size: 28px;
 }
+@media screen and (max-width: 960px) {
+  body main .desc_box h1 span {
+    font-size: 18px !important;
+  }
+}
 body main .desc_box p {
   text-align: center;
   font-family: 'kan412typos-std',sans-serif;
   color: #4d484a;
+}
+@media screen and (max-width: 960px) {
+  body main .desc_box p {
+    font-size: 14px !important;
+  }
+}
+body main .desc_box p .text {
+  display: inline-block;
 }
 body main .scene_box {
   width: 60%;
@@ -178,18 +188,38 @@ body main .scene_box {
   margin: 0 auto;
   margin-top: 60px;
 }
+@media screen and (max-width: 960px) {
+  body main .scene_box {
+    width: 80%;
+  }
+}
 body main .scene_box h1 {
   font-family: 'kan412typos-std',sans-serif;
   text-align: center;
   font-size: 32px;
   color: #4d484a;
 }
+@media screen and (max-width: 960px) {
+  body main .scene_box h1 {
+    font-size: 24px !important;
+  }
+}
 body main .scene_box .slick-box {
   width: 100%;
 }
 body main .scene_box .slick-box img {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
+}
+@media screen and (max-width: 960px) {
+  body main .scene_box .slick-box img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 960px) {
+  body main .scene_box .slick-box .slick-dots li button:before {
+    font-size: 25px !important;
+  }
 }
 body footer {
   width: 100%;

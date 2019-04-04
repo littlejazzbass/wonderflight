@@ -9,7 +9,7 @@ $(function() {
       pauseOnFocus: false,
       pauseOnHover: false,
       pauseOnDotsHover: false,
-      speed: 300,
+      speed: 600,
       slidesToShow: 1,
       adaptiveHeight: true
     });

@@ -22,7 +22,7 @@
     // of different video formats to add
     src: [
       {
-        src: 'resource/movie/wonderflight3.mp4',
+        src: 'resource/movie/wonderflight4.mp4',
         type: 'video/mp4'
       },
       {
